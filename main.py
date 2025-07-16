@@ -1,14 +1,18 @@
+"""Main module for BookBot"""
+
 import sys
 
 from stats import get_book_char_count, get_book_word_count, sort_char_count
 
 
 def get_book_text(file_path):
-    with open(file_path) as f:
+    """Reads a file and returns its text"""
+    with open(file_path, encoding="utf-8") as f:
         return f.read()
 
 
 def main():
+    """Main function for BookBot"""
     if len(sys.argv) < 2:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
