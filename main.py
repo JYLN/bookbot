@@ -24,7 +24,7 @@ def main():
 
         # Print report
         print("============ BOOKBOT ============")
-        print(f"Analyzing book found at {sys.argv[1]}")
+        print(f"Analyzing book found at {sys.argv[1]}...")
         print("----------- Word Count ----------")
         print(f"Found {word_count} total words")
         print("--------- Character Count -------")
